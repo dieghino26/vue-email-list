@@ -24,7 +24,7 @@
 
 <body>
     <div id="root">
-        <ul>
+        <ul v-if="emails.length >= 10">
             <li v-for="(email, i) in emails" :key="i">{{email}}</li>
         </ul>
     </div>
