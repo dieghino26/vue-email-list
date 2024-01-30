@@ -15,9 +15,7 @@
         crossorigin='anonymous'></script>
 
     <!--Vue 3-->
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/3.4.15/vue.cjs.js'
-        integrity='sha512-v43CHylp2byK4H0o5WYD3XvfXhDD2infaA/ObwTLKru+zYNNCzye3Z1lv3dWZo0MGrTiXU+nhqPg/BH6HCwGuA=='
-        crossorigin='anonymous'></script>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 
     <!--JavaScript-->
     <script defer src="js/vuemail.js"></script>
@@ -26,7 +24,9 @@
 
 <body>
     <div id="root">
-
+        <ul>
+            <li v-for="(email, i) in emails" :key="i">{{email}}</li>
+        </ul>
     </div>
 
 </body>
